@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Word Scramble Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+The **Word Scramble Game** is a fun and interactive application built with **React**, **Vite**, and **TypeScript**. It displays a scrambled word and challenges you to guess the correct word within a time limit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Random Word Selection**: Randomly selects and scrambles words from a predefined list.
+- **User Input**: Allows you to input your guesses.
+- **Immediate Feedback**: Provides instant feedback on whether your guess is correct.
+- **Hint System**: Displays a hint to help you guess the word.
+- **Score Tracking**: Keeps track of your score throughout the game.
+- **Timer**: Includes a countdown timer to increase the challenge.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to Run
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Node.js** (version 14 or higher)
+- **npm** (version 6 or higher)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Steps
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the Repository**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/yemmyharry/word-scramble-game.git
+
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+
+3. **Start the Development Server**
+
+   ```bash
+   npm run dev
+
+4. **Run Tests**
+
+   ```bash
+   npm run test
+
